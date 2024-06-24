@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  width: 60%;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1000px) {
+    width: 70%;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 96%;
+  }
+}
+
+.body-dark {
+  background-color: grey;
+}
+
+.title {
+  text-align: center;
+  margin: 10px auto;
+}
+
+.title-dark {
+  color: white;
+}
+
+.content,
+.timer,
+.count {
+  font-size: 18px;
+}
+
+.content-dark,
+.timer-dark,
+.count-dark {
+  color: white;
+}
+
+.game-field {
+  width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+
+  @media screen and (max-width: 700px) {
+    font-size: 1rem;
+    border: 1px solid black;
+  }
+}
+
+.box-dark {
+  border: 2px solid white;
+  background: rgb(187, 187, 187);
+
+  @media screen and (max-width: 700px) {
+    border: 1px solid white;
+    background: rgb(187, 187, 187);
+  }
+}
+
+.box-10 {
+  width: 48px;
+  height: 48px;
+}
+
+.box-15 {
+  width: calc(480px / 15);
+  height: calc(480px / 15);
+}
+
+.box-25 {
+  width: calc(480px / 25);
+  height: calc(480px / 25);
+}
+
+.bomb-count-0 {
+  color: transparent;
+}
+
+.bomb-count-1 {
+  color: blue;
+}
+
+.bomb-count-2 {
+  color: green;
+}
+
+.bomb-count-3 {
+  color: red;
+}
+
+.bomb-count-4 {
+  color: darkblue;
+}
+
+.bomb-count-5 {
+  color: brown;
+}
+
+.bomb-count-6 {
+  color: turquoise;
+}
+
+.bomb-count-7 {
+  color: rgb(233, 144, 144);
+}
+
+.bomb-count-8 {
+  color: pink;
+}
+
+.empty-box {
+  background-color: aqua;
+}
+
+// Overlay
+.overlay {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.overlay-dark {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.overlay_open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-window {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  height: 60%;
+  background-color: rgba(255, 255, 255, 0.65);
+  font-size: 18px;
+
+  @media screen and (max-width: 1000px) {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+.button {
+  cursor: pointer;
+  border: 2px solid black;
+  font-size: 18px;
+  padding: 5px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: pink;
+  }
+}
+
+.button-dark {
+  border: 2px solid white;
+  color: white;
+}
+
+.buttons-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.countSteps {
+  display: flex;
+  align-items: center;
+}
+
+.timer_container {
+  display: flex;
+  align-items: center;
+}
+
+.level-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.level-button_active {
+  background-color: pink;
+}
+
+.mines-count-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.input-form {
+  height: 35px;
+}
+
+.form-block {
+  display: flex;
+  align-items: center;
+}
+
+.statistic-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.music-on {
+  background-color: greenyellow;
+}
+
+.music-off {
+  background-color: pink;
+}
+
+.result-item {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-start;
+}
+
+.result-content {
+  padding-left: 10px;
+}
